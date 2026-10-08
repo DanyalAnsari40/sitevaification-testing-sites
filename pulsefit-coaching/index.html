@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulseFit Dynamics — Elite Hybrid Athletic Performance &amp; Longevity</title>
+  <meta name="description" content="Science-backed hybrid training combining Olympic strength, VO2 Max conditioning, cold plunge recovery, and precision biometric tracking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Alert Ribbon -->
+  <div class="top-ribbon">
+    <span>⚡ OCTOBER PERFORMANCE INTAKE: ONLY 8 TRIAL SLOTS REMAINING THIS MONTH</span>
+    <a href="#trial" class="ribbon-link" id="ribbon-cta">Claim 7-Day Trial Pass &rarr;</a>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="athletic-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#CCFF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        <span class="logo-name">PULSE<span>FIT</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#disciplines" class="nav-item">Disciplines</a>
+        <a href="#schedule" class="nav-item">Class Schedule</a>
+        <a href="#calculator" class="nav-item">Macro Calculator</a>
+        <a href="#coaches" class="nav-item">Master Coaches</a>
+        <a href="#pricing" class="nav-item">Memberships</a>
+      </nav>
+
+      <div class="nav-cta-wrap">
+        <button class="btn-lime" id="open-trial-btn">Get Free Trial Pass</button>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-pattern-bg"></div>
+      
+      <div class="hero-container">
+        <div class="hero-text-column">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            BIOMETRIC-DRIVEN HUMAN PERFORMANCE
+          </div>
+
+          <h1 class="hero-headline">
+            BUILD UNBREAKABLE <span class="highlight-lime">POWER</span>, RELENTLESS <span class="highlight-lime">STAMINA</span>.
+          </h1>
+
+          <p class="hero-paragraph">
+            Elevate beyond typical gym routines. PulseFit bridges Olympic weightlifting mechanics, VO2 Max anaerobic thresholds, and cellular recovery protocols into one unified training system.
+          </p>
+
+          <div class="hero-btn-row">
+            <button class="btn-lime btn-large" onclick="openTrialModal('7-Day Performance Trial')">
+              Start Free 7-Day Evaluation
+            </button>
+            <a href="#schedule" class="btn-dark btn-large">
+              View Weekly Schedule &rarr;
+            </a>
+          </div>
+
+          <!-- Live Performance Stats -->
+          <div class="hero-metrics-bar">
+            <div class="metric-block">
+              <span class="metric-number">98.4%</span>
+              <span class="metric-label">Goal Completion Rate</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-block">
+              <span class="metric-number">+18.6%</span>
+              <span class="metric-label">Avg VO2 Max Increase</span>
+            </div>
+            <div class="metric-sep"></div>
+            <div class="metric-block">
+              <span class="metric-number">14,800+</span>
+              <span class="metric-label">Monitored Training Hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-column">
+          <div class="performance-hud-card">
+            <div class="hud-header">
+              <div class="hud-status">
+                <span class="live-pulse"></span>
+                <span>LIVE ATHLETE TELEMETRY</span>
+              </div>
+              <div class="hud-device">Polar H10 &bull; Synced</div>
+            </div>
+
+            <div class="hud-body">
+              <div class="heart-rate-display">
+                <div class="hr-value">168 <span class="hr-unit">BPM</span></div>
+                <div class="zone-tag zone-4">ZONE 4: ANAEROBIC THRESHOLD</div>
+              </div>
+
+              <!-- Animated Pulse Line SVG -->
+              <div class="ecg-graph-box">
+                <svg width="100%" height="80" viewBox="0 0 350 80" fill="none">
+                  <path d="M0 40 L50 40 L60 20 L75 60 L90 10 L105 70 L115 40 L160 40 L170 20 L185 65 L200 12 L215 72 L225 40 L280 40 L290 22 L305 62 L320 15 L335 70 L350 40" stroke="#CCFF00" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="ecg-line"/>
+                </svg>
+              </div>
+
+              <div class="hud-stats-grid">
+                <div class="hud-stat-cell">
+                  <span class="hud-sub">SESSION CALORIES</span>
+                  <strong class="hud-val">742 kcal</strong>
+                </div>
+                <div class="hud-stat-cell">
+                  <span class="hud-sub">LACTATE CLEARANCE</span>
+                  <strong class="hud-val">4.2 mmol/L</strong>
+                </div>
+                <div class="hud-stat-cell">
+                  <span class="hud-sub">OUTPUT POWER</span>
+                  <strong class="hud-val">385 Watts</strong>
+                </div>
+                <div class="hud-stat-cell">
+                  <span class="hud-sub">RECOVERY SCORE</span>
+                  <strong class="hud-val text-lime">94 / 100</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="hud-footer">
+              <span>Next Group Block: <strong>HYROX Engine @ 18:00</strong></span>
+              <button class="hud-book-btn" onclick="openTrialModal('HYROX Engine Trial')">Reserve Spot</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Disciplines -->
+    <section class="disciplines-section" id="disciplines">
+      <div class="section-container">
+        <div class="section-title-wrap">
+          <span class="kicker-lime">OUR 4-PILLAR METHODOLOGY</span>
+          <h2 class="section-title">ENGINEERED FOR THE MODERN HYBRID ATHLETE</h2>
+          <p class="section-subtitle">We integrate barbell strength, cardiovascular power, and cellular restoration so you never have to sacrifice endurance for raw power.</p>
+        </div>
+
+        <div class="disciplines-grid">
+          <!-- Pillar 1 -->
+          <div class="discipline-card">
+            <div class="card-number">01</div>
+            <div class="discipline-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#CCFF00" stroke-width="2"><path d="M6 5v14M18 5v14M2 9v6M22 9v6M6 12h12"/></svg>
+            </div>
+            <h3>Kinetic Hypertrophy &amp; Power</h3>
+            <p>Develop dense muscular strength and explosive rate of force development using Olympic lifts, safety squat bars, and velocity-based barbell trackers.</p>
+            <div class="discipline-tags">
+              <span>Barbell Squat</span>
+              <span>Trap Bar Deadlift</span>
+              <span>Clean &amp; Jerk</span>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="discipline-card">
+            <div class="card-number">02</div>
+            <div class="discipline-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FF6B00" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3>Metabolic Engine &amp; Hyrox</h3>
+            <p>Expand your mitochondrial density and lactate threshold. Train across SkiErg, Rogue Echo bikes, sled pushes, and interval sprint intervals.</p>
+            <div class="discipline-tags">
+              <span>VO2 Max Ladders</span>
+              <span>SkiErg Repeats</span>
+              <span>Sled Pushes</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="discipline-card">
+            <div class="card-number">03</div>
+            <div class="discipline-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00E5FF" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+            </div>
+            <h3>Bio-Longevity &amp; Contrast Therapy</h3>
+            <p>Accelerate muscle repair through our contrast suite featuring 38°F filtered cold plunges, 200°F Finnish cedar saunas, and pneumatic compression boots.</p>
+            <div class="discipline-tags">
+              <span>38°F Cold Plunge</span>
+              <span>Infrared Sauna</span>
+              <span>Normatec Boots</span>
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="discipline-card">
+            <div class="card-number">04</div>
+            <div class="discipline-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#A855F7" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Biometrics &amp; Macro Calibration</h3>
+            <p>Eliminate guesswork. In-depth quarterly DEXA scans, resting metabolic rate evaluations, and individual macro targeting synced with your Apple Watch or Garmin.</p>
+            <div class="discipline-tags">
+              <span>DEXA Body Composition</span>
+              <span>Macro Coaching</span>
+              <span>HRV Tracking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Daily Class Schedule -->
+    <section class="schedule-section" id="schedule">
+      <div class="section-container">
+        <div class="section-title-wrap">
+          <span class="kicker-lime">LIVE TIMETABLE</span>
+          <h2 class="section-title">WEEKLY PERFORMANCE SCHEDULE</h2>
+          <p class="section-subtitle">Classes are capped at 14 athletes to guarantee individual coaching correction and barbell safety.</p>
+        </div>
+
+        <!-- Day Selector Tabs -->
+        <div class="schedule-tabs" id="day-tabs">
+          <button class="day-tab active" data-day="mon">MON</button>
+          <button class="day-tab" data-day="tue">TUE</button>
+          <button class="day-tab" data-day="wed">WED</button>
+          <button class="day-tab" data-day="thu">THU</button>
+          <button class="day-tab" data-day="fri">FRI</button>
+          <button class="day-tab" data-day="sat">SAT</button>
+        </div>
+
+        <!-- Schedule List Container -->
+        <div class="schedule-cards-list" id="schedule-cards-container">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Macro & Nutrition Target Calculator -->
+    <section class="calculator-section" id="calculator">
+      <div class="section-container">
+        <div class="calc-wrapper">
+          <div class="calc-left">
+            <span class="kicker-lime">NUTRITION SCIENCE</span>
+            <h2>HYBRID ATHLETE MACRO CALCULATOR</h2>
+            <p>Precision fuel equals peak output. Calculate your individualized caloric needs and macronutrient distribution based on your training goals.</p>
+
+            <form class="calc-form" id="macro-form">
+              <div class="form-row">
+                <div class="input-box">
+                  <label for="athlete-weight">Current Body Weight</label>
+                  <div class="unit-input">
+                    <input type="number" id="athlete-weight" value="78" min="40" max="180">
+                    <span class="unit-tag">kg</span>
+                  </div>
+                </div>
+
+                <div class="input-box">
+                  <label for="training-freq">Weekly Training Volume</label>
+                  <select id="training-freq">
+                    <option value="3">3–4 Sessions / Week (Moderate)</option>
+                    <option value="5" selected>5–6 Sessions / Week (Intense)</option>
+                    <option value="7">7+ Sessions (Competitive Athlete)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="input-box">
+                <label>Primary Focus Target</label>
+                <div class="target-radio-group">
+                  <button type="button" class="target-btn active" data-target="muscle">Lean Muscle Hypertrophy</button>
+                  <button type="button" class="target-btn" data-target="endurance">Hyrox Conditioning &amp; Stamina</button>
+                  <button type="button" class="target-btn" data-target="recomp">Body Recomposition / Cut</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="calc-right">
+            <div class="macro-result-panel">
+              <span class="macro-kicker">DAILY TARGET EXPENDITURE</span>
+              <div class="calorie-highlight">
+                <span class="calorie-number" id="calc-calories">2,850</span>
+                <span class="calorie-unit">kcal / day</span>
+              </div>
+
+              <div class="macro-bars">
+                <!-- Protein -->
+                <div class="macro-row">
+                  <div class="macro-info">
+                    <span class="macro-name">PROTEIN (Optimal Synthesis)</span>
+                    <strong class="macro-amount" id="macro-protein">180g</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill fill-lime" style="width: 30%;"></div>
+                  </div>
+                </div>
+
+                <!-- Carbs -->
+                <div class="macro-row">
+                  <div class="macro-info">
+                    <span class="macro-name">CARBOHYDRATES (Glycogen Replenish)</span>
+                    <strong class="macro-amount" id="macro-carbs">340g</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill fill-orange" style="width: 50%;"></div>
+                  </div>
+                </div>
+
+                <!-- Fats -->
+                <div class="macro-row">
+                  <div class="macro-info">
+                    <span class="macro-name">HEALTHY FATS (Hormone Health)</span>
+                    <strong class="macro-amount" id="macro-fats">75g</strong>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill fill-cyan" style="width: 20%;"></div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn-lime btn-block" onclick="openTrialModal('Nutrition Assessment')">
+                Claim Free In-Person Body Scan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Master Coaching Roster -->
+    <section class="coaches-section" id="coaches">
+      <div class="section-container">
+        <div class="section-title-wrap">
+          <span class="kicker-lime">WORLD-CLASS PEDIGREE</span>
+          <h2 class="section-title">MEET YOUR COACHING DIRECTORS</h2>
+          <p class="section-subtitle">Our staff carries master's degrees in exercise physiology, national Olympic lifting titles, and elite Hyrox podium finishes.</p>
+        </div>
+
+        <div class="coaches-grid">
+          <!-- Coach 1 -->
+          <div class="coach-card">
+            <div class="coach-photo-box">
+              <div class="coach-silhouette">
+                <svg width="120" height="120" viewBox="0 0 100 100" fill="none">
+                  <circle cx="50" cy="35" r="20" fill="#2A324B"/>
+                  <path d="M20 90 C20 65 80 65 80 90 Z" fill="#2A324B"/>
+                  <circle cx="50" cy="50" r="48" stroke="#CCFF00" stroke-width="1.5" stroke-dasharray="6 6"/>
+                </svg>
+              </div>
+              <div class="coach-badge">HEAD OF STRENGTH</div>
+            </div>
+            <div class="coach-info">
+              <h3>Marcus Vance, CSCS</h3>
+              <span class="coach-role">Olympic Weightlifting Specialist</span>
+              <p>Former Team USA Weightlifting coach with 14 years experience developing barbell mechanics, hip power, and injury-proof movement patterns.</p>
+            </div>
+          </div>
+
+          <!-- Coach 2 -->
+          <div class="coach-card">
+            <div class="coach-photo-box">
+              <div class="coach-silhouette">
+                <svg width="120" height="120" viewBox="0 0 100 100" fill="none">
+                  <circle cx="50" cy="35" r="20" fill="#2A324B"/>
+                  <path d="M20 90 C20 65 80 65 80 90 Z" fill="#2A324B"/>
+                  <circle cx="50" cy="50" r="48" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="6 6"/>
+                </svg>
+              </div>
+              <div class="coach-badge orange">HEAD OF CONDITIONING</div>
+            </div>
+            <div class="coach-info">
+              <h3>Elena Rostova, MSc</h3>
+              <span class="coach-role">Hyrox Elite &bull; VO2 Max Director</span>
+              <p>Ranked Top 5 Global Hyrox Pro. Specializes in aerobic base threshold development, pacing algorithms, and mental resilience under high fatigue.</p>
+            </div>
+          </div>
+
+          <!-- Coach 3 -->
+          <div class="coach-card">
+            <div class="coach-photo-box">
+              <div class="coach-silhouette">
+                <svg width="120" height="120" viewBox="0 0 100 100" fill="none">
+                  <circle cx="50" cy="35" r="20" fill="#2A324B"/>
+                  <path d="M20 90 C20 65 80 65 80 90 Z" fill="#2A324B"/>
+                  <circle cx="50" cy="50" r="48" stroke="#00E5FF" stroke-width="1.5" stroke-dasharray="6 6"/>
+                </svg>
+              </div>
+              <div class="coach-badge cyan">HEAD OF RECOVERY</div>
+            </div>
+            <div class="coach-info">
+              <h3>Dr. Julian Thorne, DPT</h3>
+              <span class="coach-role">Sports Physical Therapy &amp; Longevity</span>
+              <p>Doctor of Physical Therapy focused on joint kinetics, fascial decompression, and contrast therapy protocols to extend athletic lifespans into your 60s and beyond.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership Tiers -->
+    <section class="pricing-section" id="pricing">
+      <div class="section-container">
+        <div class="section-title-wrap">
+          <span class="kicker-lime">MEMBERSHIP TIERS</span>
+          <h2 class="section-title">INVEST IN YOUR PERFORMANCE</h2>
+          <p class="section-subtitle">No long-term locks. Cancel anytime with 14 days notice. Every tier includes coaching assessment.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1 -->
+          <div class="tier-card">
+            <div class="tier-head">
+              <h3>FOUNDATION</h3>
+              <p class="tier-desc">For athletes wanting structured conditioning &amp; open gym access.</p>
+              <div class="tier-price">
+                <span class="currency">$</span>
+                <span class="amount">149</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="tier-features">
+              <li><span>✔</span> 3 Coached Group Sessions / week</li>
+              <li><span>✔</span> Unlimited Open Gym Barbell Access</li>
+              <li><span>✔</span> Monthly Biometric DEXA Scan</li>
+              <li><span>✔</span> Access to Locker Rooms &amp; Showers</li>
+            </ul>
+            <button class="btn-dark btn-block" onclick="openTrialModal('Foundation Membership')">Choose Foundation</button>
+          </div>
+
+          <!-- Tier 2 - Popular -->
+          <div class="tier-card featured">
+            <div class="featured-badge">MOST POPULAR TRACK</div>
+            <div class="tier-head">
+              <h3>HYBRID ATHLETE</h3>
+              <p class="tier-desc">Our flagship program combining daily strength, engine blocks, &amp; recovery.</p>
+              <div class="tier-price">
+                <span class="currency">$</span>
+                <span class="amount text-lime">249</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="tier-features">
+              <li><span>✔</span> Unlimited Coached Group Sessions</li>
+              <li><span>✔</span> Unlimited Cold Plunge &amp; Cedar Sauna</li>
+              <li><span>✔</span> Custom Macro &amp; Nutrition Target App</li>
+              <li><span>✔</span> Bi-Weekly Coach Form Review</li>
+              <li><span>✔</span> Heart-Rate Telemetry Sensor Included</li>
+            </ul>
+            <button class="btn-lime btn-block" onclick="openTrialModal('Hybrid Athlete Membership')">Claim Hybrid Pass</button>
+          </div>
+
+          <!-- Tier 3 -->
+          <div class="tier-card">
+            <div class="tier-head">
+              <h3>EXECUTIVE 1-ON-1</h3>
+              <p class="tier-desc">Bespoke private coaching with dedicated Olympic director.</p>
+              <div class="tier-price">
+                <span class="currency">$</span>
+                <span class="amount">490</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <ul class="tier-features">
+              <li><span>✔</span> 4 Private 1-on-1 Sessions / month</li>
+              <li><span>✔</span> All Hybrid Athlete Tier Inclusions</li>
+              <li><span>✔</span> Bloodwork Biomarker Panel Review</li>
+              <li><span>✔</span> 24/7 Dedicated Coach Text Hotline</li>
+              <li><span>✔</span> Private Recovery Suite Booking</li>
+            </ul>
+            <button class="btn-dark btn-block" onclick="openTrialModal('Executive 1-on-1 Membership')">Apply for Executive</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trial Booking CTA Strip -->
+    <section class="trial-strip" id="trial">
+      <div class="section-container">
+        <div class="strip-box">
+          <div class="strip-text">
+            <h2>TEST DRIVE PULSEFIT FOR 7 FULL DAYS</h2>
+            <p>Experience full coaching feedback, cold plunges, and unlimited classes. Zero credit card required upfront.</p>
+          </div>
+          <div class="strip-action">
+            <button class="btn-lime btn-large" onclick="openTrialModal('7-Day Free Pass')">
+              Activate 7-Day Pass
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="athletic-footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="brand-logo">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#CCFF00" stroke-width="2.5">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <span class="logo-name">PULSE<span>FIT</span></span>
+          </div>
+          <p class="footer-about">High-performance athletic conditioning facility &amp; sports science lab.</p>
+          <div class="facility-hours">
+            <strong>Facility Hours:</strong>
+            <p>Mon – Fri: 5:00 AM – 9:30 PM</p>
+            <p>Sat – Sun: 6:30 AM – 7:00 PM</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Disciplines</h4>
+          <a href="#disciplines">Olympic Weightlifting</a>
+          <a href="#disciplines">Hyrox &amp; Aerobic Engine</a>
+          <a href="#disciplines">38°F Cold Plunges</a>
+          <a href="#disciplines">Finnish Cedar Saunas</a>
+          <a href="#calculator">Macro Calculator</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Athletes</h4>
+          <a href="#schedule">Class Timetable</a>
+          <a href="#coaches">Staff Directory</a>
+          <a href="#pricing">Membership Rates</a>
+          <a href="#trial">Trial Pass FAQ</a>
+          <a href="#">Facility Policies</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Facility Location</h4>
+          <p class="loc-text"><strong>HQ Performance Facility:</strong><br>842 Ironworks Blvd, Industrial District<br>Austin, TX 78701</p>
+          <p class="contact-text">Direct Line: +1 (512) 883-9120<br>team@pulsefitdynamics.com</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 PulseFit Dynamics LLC. All rights reserved.</span>
+        <div class="legal-links">
+          <a href="#">Liability Waiver</a>
+          <a href="#">Privacy Protocol</a>
+          <a href="#">Terms of Training</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Free Trial Booking Modal -->
+  <div class="modal-overlay" id="trial-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-x-btn" id="close-trial-modal">&times;</button>
+      <div class="modal-heading">
+        <span class="kicker-lime">START YOUR 7-DAY INTAKE</span>
+        <h3 id="modal-program-title">Claim Your 7-Day Performance Trial</h3>
+        <p>Zero commitment. Experience hands-on coaching and our recovery contrast suite.</p>
+      </div>
+
+      <form class="trial-form" id="trial-booking-form">
+        <div class="form-group">
+          <label for="athlete-name">Full Name</label>
+          <input type="text" id="athlete-name" placeholder="Alex Morgan" required>
+        </div>
+
+        <div class="form-group">
+          <label for="athlete-email">Email Address</label>
+          <input type="email" id="athlete-email" placeholder="alex@performance.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="athlete-phone">Phone Number (For SMS Class Confirmation)</label>
+          <input type="tel" id="athlete-phone" placeholder="(512) 555-0199" required>
+        </div>
+
+        <div class="form-group">
+          <label for="trial-track">Preferred Training Track</label>
+          <select id="trial-track">
+            <option value="Hybrid Athlete" selected>Hybrid Athlete (Strength + Conditioning)</option>
+            <option value="Olympic Strength">Kinetic Olympic Strength Only</option>
+            <option value="Hyrox Engine">Hyrox Aerobic Engine Only</option>
+            <option value="Contrast Recovery">Contrast Cold Plunge Recovery Trial</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-lime btn-large btn-block">Confirm Free 7-Day Pass</button>
+        <p class="disclaimer-text">Pass valid for 7 consecutive days starting from your first booked class.</p>
+      </form>
+
+      <div class="trial-success" id="trial-success-box" style="display: none;">
+        <div class="checkmark-icon">✓</div>
+        <h3>Pass Confirmed, Athlete!</h3>
+        <p>We sent your orientation pass and barcode to your email. See you on the gym turf!</p>
+        <button class="btn-dark" id="trial-success-close">Return to Portal</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Athletic Toast Message Container -->
+  <div class="athletic-toast-zone" id="toast-zone"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
