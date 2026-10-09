@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NexusAI — Enterprise Autonomous Agent & LLM Orchestration Platform</title>
-  <meta name="description" content="Deploy, evaluate, and monitor autonomous AI agents with zero-latency routing, sub-millisecond vector memory, and enterprise-grade deterministic guardrails.">
+  <meta name="description"
+    content="Deploy, evaluate, and monitor autonomous AI agents with zero-latency routing, sub-millisecond vector memory, and enterprise-grade deterministic guardrails.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
+  <!-- PkBizGuide Verified Business Link: nexuxxsai.netlify.app -->
+  <a href="https://pkbizguide.com" target="_blank" rel="noopener" data-pkbz-verify="pkbz-verify-nexuxxsai-94fefe"
+    data-pkbz-domain="nexuxxsai.netlify.app" title="Verified Business on PkBizGuide Pakistan Directory">Verified on
+    PkBizGuide</a>
   <!-- Navigation -->
   <header class="site-header" id="header">
     <div class="nav-container">
       <a href="#hero" class="brand-logo" id="brand-logo">
         <div class="logo-symbol">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 17L12 22L22 17" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 12L12 17L22 12" stroke="#A78BFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 17L12 22L22 17" stroke="#06B6D4" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M2 12L12 17L22 12" stroke="#A78BFA" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </div>
         <span class="logo-text">Nexus<span>AI</span></span>
@@ -52,12 +63,14 @@
     <section class="hero-section" id="hero">
       <div class="hero-background-glow"></div>
       <div class="hero-grid-pattern"></div>
-      
+
       <div class="hero-container">
         <div class="announcement-pill" id="announcement-pill">
           <span class="pill-badge">v3.4 Release</span>
           <span class="pill-text">Autonomous Multi-Agent Routing Engine is now Live</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
         </div>
 
         <h1 class="hero-title">
@@ -65,16 +78,21 @@
         </h1>
 
         <p class="hero-subtitle">
-          Unify leading foundational models, private enterprise vector stores, and custom microservices. Deliver self-healing AI workflows backed by SOC-2 Type II deterministic guardrails.
+          Unify leading foundational models, private enterprise vector stores, and custom microservices. Deliver
+          self-healing AI workflows backed by SOC-2 Type II deterministic guardrails.
         </p>
 
         <div class="hero-cta-group">
           <button class="btn-primary btn-large" id="hero-start-trial-btn">
             Start 14-Day Free Sandbox
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </button>
           <a href="#simulator" class="btn-secondary btn-large" id="hero-live-terminal-btn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
             Interactive Agent Console
           </a>
         </div>
@@ -117,13 +135,20 @@
             </div>
           </div>
           <div class="terminal-body" id="terminal-body">
-            <div class="terminal-line system"><span class="prompt">$</span> nexus orchestrate --agent="FinancialAuditor" --mode=autonomous</div>
-            <div class="terminal-line"><span class="badge blue">[INIT]</span> Initializing Nexus Kernel v3.4.1 ... Ready</div>
-            <div class="terminal-line"><span class="badge purple">[ROUTER]</span> Analyzing intent &amp; context embeddings: confidence 99.8%</div>
-            <div class="terminal-line"><span class="badge cyan">[EXEC]</span> Dispatched subagent: <span class="highlight">SEC-Filing-Parser</span> (Claude 3.7 Sonnet)</div>
-            <div class="terminal-line"><span class="badge cyan">[EXEC]</span> Dispatched subagent: <span class="highlight">BalanceSheet-Validator</span> (GPT-4o)</div>
-            <div class="terminal-line"><span class="badge green">[RESOLVED]</span> Cross-validated 14,200 transactions across 12 ledger schemas in 680ms.</div>
-            <div class="terminal-line system"><span class="prompt">$</span> Guardrail score: 100/100 • Zero hallucinations detected. Pipeline finalized.</div>
+            <div class="terminal-line system"><span class="prompt">$</span> nexus orchestrate --agent="FinancialAuditor"
+              --mode=autonomous</div>
+            <div class="terminal-line"><span class="badge blue">[INIT]</span> Initializing Nexus Kernel v3.4.1 ... Ready
+            </div>
+            <div class="terminal-line"><span class="badge purple">[ROUTER]</span> Analyzing intent &amp; context
+              embeddings: confidence 99.8%</div>
+            <div class="terminal-line"><span class="badge cyan">[EXEC]</span> Dispatched subagent: <span
+                class="highlight">SEC-Filing-Parser</span> (Claude 3.7 Sonnet)</div>
+            <div class="terminal-line"><span class="badge cyan">[EXEC]</span> Dispatched subagent: <span
+                class="highlight">BalanceSheet-Validator</span> (GPT-4o)</div>
+            <div class="terminal-line"><span class="badge green">[RESOLVED]</span> Cross-validated 14,200 transactions
+              across 12 ledger schemas in 680ms.</div>
+            <div class="terminal-line system"><span class="prompt">$</span> Guardrail score: 100/100 • Zero
+              hallucinations detected. Pipeline finalized.</div>
           </div>
         </div>
       </div>
@@ -149,17 +174,21 @@
         <div class="section-header">
           <span class="section-kicker">ENGINEERING ADVANTAGE</span>
           <h2 class="section-heading">Built for High-Throughput Engineering Teams</h2>
-          <p class="section-desc">Everything needed to move AI initiatives from brittle experimental prototypes to deterministic production reality.</p>
+          <p class="section-desc">Everything needed to move AI initiatives from brittle experimental prototypes to
+            deterministic production reality.</p>
         </div>
 
         <div class="bento-grid">
           <!-- Card 1 -->
           <div class="bento-card card-large">
             <div class="card-icon-bubble">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+              </svg>
             </div>
             <h3>Intelligent Dynamic Model Router</h3>
-            <p>Automatically directs queries to the most cost-efficient and performant LLM provider (OpenAI, Anthropic, Gemini, DeepSeek, or local vLLM) based on latency SLAs, price ceilings, and token complexity.</p>
+            <p>Automatically directs queries to the most cost-efficient and performant LLM provider (OpenAI, Anthropic,
+              Gemini, DeepSeek, or local vLLM) based on latency SLAs, price ceilings, and token complexity.</p>
             <div class="bento-visual">
               <div class="router-tag active">Claude 3.7 Sonnet <span class="status-ok">99.9%</span></div>
               <div class="router-tag">GPT-4o <span class="status-ok">14ms</span></div>
@@ -171,37 +200,51 @@
           <!-- Card 2 -->
           <div class="bento-card">
             <div class="card-icon-bubble">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#06B6D4" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
             </div>
             <h3>Sub-14ms Vector Memory</h3>
-            <p>Integrated hybrid search combining sparse BM25 and dense HNSW embeddings across distributed sharded nodes for instant state recall.</p>
+            <p>Integrated hybrid search combining sparse BM25 and dense HNSW embeddings across distributed sharded nodes
+              for instant state recall.</p>
           </div>
 
           <!-- Card 3 -->
           <div class="bento-card">
             <div class="card-icon-bubble">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
             </div>
             <h3>Deterministic Guardrails</h3>
-            <p>Catch prompt injections, PII leaks, and rogue agent behavior with real-time semantic bounds before tokens ever reach your end customers.</p>
+            <p>Catch prompt injections, PII leaks, and rogue agent behavior with real-time semantic bounds before tokens
+              ever reach your end customers.</p>
           </div>
 
           <!-- Card 4 -->
           <div class="bento-card">
             <div class="card-icon-bubble">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
             </div>
             <h3>Full-Trace Observability</h3>
-            <p>OpenTelemetry native tracing. Inspect exact agent deliberation loops, sub-step tool invocations, token expenses, and latency breakdowns.</p>
+            <p>OpenTelemetry native tracing. Inspect exact agent deliberation loops, sub-step tool invocations, token
+              expenses, and latency breakdowns.</p>
           </div>
 
           <!-- Card 5 -->
           <div class="bento-card card-large">
             <div class="card-icon-bubble">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M3 9h18"/></svg>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M9 3v18M3 9h18" />
+              </svg>
             </div>
             <h3>Zero Data Retention &amp; VPC Air-Gap</h3>
-            <p>Deploy directly within your AWS, Azure, or GCP private cloud. No data is stored, cached, or utilized for LLM training under binding enterprise SLAs.</p>
+            <p>Deploy directly within your AWS, Azure, or GCP private cloud. No data is stored, cached, or utilized for
+              LLM training under binding enterprise SLAs.</p>
             <div class="compliance-badges">
               <span class="badge-pill">SOC-2 Type II</span>
               <span class="badge-pill">HIPAA Eligible</span>
@@ -219,7 +262,8 @@
         <div class="section-header">
           <span class="section-kicker">ECONOMIC VALUE</span>
           <h2 class="section-heading">Calculate Your Projected Infrastructure Savings</h2>
-          <p class="section-desc">NexusAI optimizes token consumption and slashes compute costs through autonomous semantic caching and tiered fallback routing.</p>
+          <p class="section-desc">NexusAI optimizes token consumption and slashes compute costs through autonomous
+            semantic caching and tiered fallback routing.</p>
         </div>
 
         <div class="calc-card">
@@ -253,7 +297,8 @@
             <div class="calc-field">
               <label>Current Primary Model Mix</label>
               <div class="radio-pill-group">
-                <button type="button" class="pill-btn active" data-mix="premium">Mostly Tier-1 (GPT-4o / Claude Sonnet)</button>
+                <button type="button" class="pill-btn active" data-mix="premium">Mostly Tier-1 (GPT-4o / Claude
+                  Sonnet)</button>
                 <button type="button" class="pill-btn" data-mix="balanced">Mixed Tier-1 &amp; Tier-2</button>
               </div>
             </div>
@@ -293,7 +338,7 @@
           <span class="section-kicker">TRANSPARENT PLANS</span>
           <h2 class="section-heading">Predictable Pricing for High-Velocity Teams</h2>
           <p class="section-desc">Scale smoothly from proof-of-concept to billions of production agent requests.</p>
-          
+
           <div class="pricing-toggle-wrap">
             <span class="toggle-label" id="monthly-label">Monthly</span>
             <label class="switch">
@@ -360,7 +405,8 @@
               <li><span>✔</span> Designated Solutions Architect</li>
               <li><span>✔</span> Custom Legal &amp; Security Audits</li>
             </ul>
-            <button class="btn-secondary btn-block" onclick="openDemoModal('Enterprise')">Talk with Solutions Team</button>
+            <button class="btn-secondary btn-block" onclick="openDemoModal('Enterprise')">Talk with Solutions
+              Team</button>
           </div>
         </div>
       </div>
@@ -377,7 +423,8 @@
         <div class="testimonials-grid">
           <div class="testimonial-card">
             <div class="quote-stars">★★★★★</div>
-            <p class="quote-text">"Before Nexus, we spent 40% of our engineering cycles managing rate-limits, routing errors, and prompt regression. Nexus stabilized our agent cluster within 48 hours."</p>
+            <p class="quote-text">"Before Nexus, we spent 40% of our engineering cycles managing rate-limits, routing
+              errors, and prompt regression. Nexus stabilized our agent cluster within 48 hours."</p>
             <div class="author-block">
               <div class="author-avatar av-1">SR</div>
               <div class="author-meta">
@@ -389,7 +436,8 @@
 
           <div class="testimonial-card">
             <div class="quote-stars">★★★★★</div>
-            <p class="quote-text">"The sub-14ms semantic vector recall is unbelievable. Our automated customer claim agents now resolve multi-step insurance filings without human touch-points."</p>
+            <p class="quote-text">"The sub-14ms semantic vector recall is unbelievable. Our automated customer claim
+              agents now resolve multi-step insurance filings without human touch-points."</p>
             <div class="author-block">
               <div class="author-avatar av-2">CM</div>
               <div class="author-meta">
@@ -401,7 +449,8 @@
 
           <div class="testimonial-card">
             <div class="quote-stars">★★★★★</div>
-            <p class="quote-text">"The cost optimizer alone pays for the platform tenfold. Automatic routing of routine classifications to lightweight models saved us $18,000 in our very first billing cycle."</p>
+            <p class="quote-text">"The cost optimizer alone pays for the platform tenfold. Automatic routing of routine
+              classifications to lightweight models saved us $18,000 in our very first billing cycle."</p>
             <div class="author-block">
               <div class="author-avatar av-3">TL</div>
               <div class="author-meta">
@@ -426,40 +475,55 @@
           <div class="accordion-item active">
             <button class="accordion-trigger" aria-expanded="true">
               <span>How does Nexus dynamic model routing work under the hood?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
             </button>
             <div class="accordion-content">
-              <p>Nexus inspects incoming prompt token count, semantic query difficulty, and latency targets. Low-complexity tasks are routed to ultra-fast models (like Gemini Flash or Claude Haiku), while high-reasoning tasks trigger deep-thinking architectures (like Claude 3.7 or o3-mini), maximizing reliability while slashing token costs by up to 50%.</p>
+              <p>Nexus inspects incoming prompt token count, semantic query difficulty, and latency targets.
+                Low-complexity tasks are routed to ultra-fast models (like Gemini Flash or Claude Haiku), while
+                high-reasoning tasks trigger deep-thinking architectures (like Claude 3.7 or o3-mini), maximizing
+                reliability while slashing token costs by up to 50%.</p>
             </div>
           </div>
 
           <div class="accordion-item">
             <button class="accordion-trigger" aria-expanded="false">
               <span>Is our customer data used to train foundational AI models?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
             </button>
             <div class="accordion-content">
-              <p>Never. Under our enterprise data processing agreements (DPA) and zero data retention architecture, your data is processed purely in volatile memory. No customer inputs, embeddings, or agent responses are ever stored or used for training.</p>
+              <p>Never. Under our enterprise data processing agreements (DPA) and zero data retention architecture, your
+                data is processed purely in volatile memory. No customer inputs, embeddings, or agent responses are ever
+                stored or used for training.</p>
             </div>
           </div>
 
           <div class="accordion-item">
             <button class="accordion-trigger" aria-expanded="false">
               <span>Can we host Nexus inside our private Kubernetes cluster?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
             </button>
             <div class="accordion-content">
-              <p>Yes. Our Enterprise tier includes Helm charts, Terraform configurations, and complete air-gapped container distributions for AWS EKS, Google GKE, Azure AKS, and bare-metal environments.</p>
+              <p>Yes. Our Enterprise tier includes Helm charts, Terraform configurations, and complete air-gapped
+                container distributions for AWS EKS, Google GKE, Azure AKS, and bare-metal environments.</p>
             </div>
           </div>
 
           <div class="accordion-item">
             <button class="accordion-trigger" aria-expanded="false">
               <span>What SDKs and programming languages are supported?</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
             </button>
             <div class="accordion-content">
-              <p>We provide first-class native SDKs for Python (async/sync), TypeScript/Node.js, Go, and Rust, as well as a drop-in OpenAI-compatible REST proxy endpoint that requires changing only one line of code.</p>
+              <p>We provide first-class native SDKs for Python (async/sync), TypeScript/Node.js, Go, and Rust, as well
+                as a drop-in OpenAI-compatible REST proxy endpoint that requires changing only one line of code.</p>
             </div>
           </div>
         </div>
@@ -472,7 +536,8 @@
         <div class="cta-box">
           <div class="cta-content">
             <h2>Ready to Deploy Autonomous Agents That Don't Break?</h2>
-            <p>Join over 1,800+ teams orchestrating mission-critical AI pipelines. Deploy your first agent in under 5 minutes.</p>
+            <p>Join over 1,800+ teams orchestrating mission-critical AI pipelines. Deploy your first agent in under 5
+              minutes.</p>
             <div class="cta-actions">
               <button class="btn-primary btn-large" id="footer-start-btn">Start Free 14-Day Trial</button>
               <button class="btn-secondary btn-large" onclick="openDemoModal('Enterprise')">Book Solutions Call</button>
@@ -490,8 +555,8 @@
         <div class="brand-logo">
           <div class="logo-symbol">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#8B5CF6" stroke-width="2"/>
-              <path d="M2 17L12 22L22 17" stroke="#06B6D4" stroke-width="2"/>
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#8B5CF6" stroke-width="2" />
+              <path d="M2 17L12 22L22 17" stroke="#06B6D4" stroke-width="2" />
             </svg>
           </div>
           <span class="logo-text">Nexus<span>AI</span></span>
@@ -587,4 +652,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
